@@ -42,8 +42,6 @@ Each page features a back button to take the user to the previous page.
 
 -JQuery
 
--Google
-
 
 ### API:
 
@@ -57,7 +55,5 @@ Each page features a back button to take the user to the previous page.
 
 
 ![Untitled_ Jun 8, 2022 3_44 PM (2)](https://user-images.githubusercontent.com/103149149/172724210-47d4b641-a39d-4be8-a289-920fdbddb0ba.gif)
-
-
 
 
