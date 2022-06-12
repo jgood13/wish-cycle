@@ -98,8 +98,9 @@ $.ajax({
       "$$app_token" : "9Em3vkFlkE4FM14o46mGdx0ae"
     }
 }).done(function(data) {
+    
     const infoElem = document.createElement('p');
-    console.log(data)
+    resultContentByName = []
     if (data[0].material_synonyms == undefined & data[0].material_synonyms == undefined){
         infoElem.innerHTML= 'Where to bring:  -- ' + data[0].stream_title
         destination.append(infoElem)
@@ -143,12 +144,12 @@ $.ajax({
         electronicSearch1.setAttribute('style', 'display:block')
         recyclingSearch.setAttribute('style', 'display:none')
         hazardSearch1.setAttribute('style', 'display:none')
-    } 
-    else if (data[0].stream_title== 'Garbage collection'){
+    } else {
         electronicSearch1.setAttribute('style', 'display:block')
-        hazardSearch1.setAttribute('style', 'display:block')
         recyclingSearch.setAttribute('style', 'display:block')
+        hazardSearch1.setAttribute('style', 'display:block')
     } 
+
 });
 
 }
@@ -257,7 +258,6 @@ goBackBtn8.addEventListener('click', function(){
 })
 goBackBtn9.addEventListener('click', function(){
   scrollToTop();
-  resultContent.innerHTML = []
   landing.setAttribute('style','transform: translate(0%)');
   searchByNameResults.setAttribute('style','transform: translate(100%)')
 })
