@@ -57,7 +57,7 @@ submit.addEventListener('click', function(event){
     fetchItem(query, resultContentByName)
     landing.setAttribute('style','transform: translate(-100%)');
     searchByNameResults.setAttribute('style','transform: translate(0%)')
-    resultLabel.textContent = queryTerm
+    resultLabelByName.textContent = queryTerm
 }})
 
 // search by input box and pressing enter
@@ -98,9 +98,7 @@ $.ajax({
       "$$app_token" : "9Em3vkFlkE4FM14o46mGdx0ae"
     }
 }).done(function(data) {
-    
     const infoElem = document.createElement('p');
-    resultContentByName = []
     if (data[0].material_synonyms == undefined & data[0].material_synonyms == undefined){
         infoElem.innerHTML= 'Where to bring:  -- ' + data[0].stream_title
         destination.append(infoElem)
@@ -220,9 +218,9 @@ goBackBtn2.addEventListener('click', function(){
 
 goBackBtn3.addEventListener('click', function(){
   scrollToTop();
-  resultContent.innerHTML = []
         fourth.setAttribute('style','transform: translate(100%)');
         third.setAttribute('style','transform: translate(0%)');
+        resultContent.innerHTML = []
       })
     
 goBackBtn4.addEventListener('click', function(){
@@ -260,6 +258,7 @@ goBackBtn9.addEventListener('click', function(){
   scrollToTop();
   landing.setAttribute('style','transform: translate(0%)');
   searchByNameResults.setAttribute('style','transform: translate(100%)')
+  resultContentByName.innerHTML= []
 })
 
 // Object for creating search by picture
