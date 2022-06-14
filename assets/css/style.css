@@ -15,9 +15,7 @@
     overflow: scroll;
 }
 
-#recyclingSearch , #electronicSearch, #hazardSearch{
-    display:none
-}
+
 
 .is-first{
     background-color: #007000;
