@@ -411,7 +411,7 @@ var generalSearch = () =>{
                     data.local_results.forEach(result =>{
                     result1 = `<h1 class="is-third title is-3">${result.title}</h1>
                         <p class="is-third">${result.extensions[4]}</p>
-                        <a class="is-third">${result.link}</a><br>`   
+                        <a href='${result.link}' target ='_blank'>link to website</a><br>`   
                     
                     $("#result2").append(result1)
                     loader.setAttribute('style', 'display:none')
@@ -454,7 +454,7 @@ var electronicSearch = () =>{
                     data.local_results.forEach(result =>{
                     result1 = `<h1 class="title is-3">${result.title}</h1>
                         <p>${result.extensions[4]}</p>
-                        <a>${result.link}</a><br>`
+                        <a href ='${result.link}' target ='_blank'>link to website</a><br>`
                     
                     $("#result2").append(result1)
                     loader.setAttribute('style', 'display:none')
@@ -500,7 +500,7 @@ var hazardSearch = () =>{
                     data.local_results.forEach(result =>{
                     result1 = `<h1 class="title is-3">${result.title}</h1>
                         <p>${result.extensions[4]}</p>
-                        <a>${result.link}</a><br>`
+                        <a href = '${result.link}' target ='_blank'> link to website</a><br>`
     
                     $("#result2").append(result1)
                     loader.setAttribute('style', 'display:none')
