@@ -404,7 +404,7 @@ var generalSearch = () =>{
                 location1.textContent = 'General Recycling for '+ data[0].name + ', ' + data[0].state
                 let city = data[0].name
                 let result1 = '';
-                let url2 = 'https://api.valueserp.com/search?api_key=C900A666A97042E0BA3DB407B95D254F&q=recycling&location='+ city+'&gl=us&cr=us&lr=lang_en&num=3'
+                let url2 = 'https://api.valueserp.com/search?api_key=A194679C5A1340D5986D72FAE3E67B62&q=recycling&location='+ city+'&gl=us&cr=us&lr=lang_en&num=3'
                 $.ajax({
                 url: url2,
                 type: 'GET',
@@ -447,7 +447,7 @@ var electronicSearch = () =>{
                 location1.textContent = 'Electronics Recycling for '+ data[0].name + ', ' + data[0].state
                 let city = data[0].name
                 let result1 = '';C900A666A97042E0BA3DB407B95D254F
-                let url2 = 'https://api.valueserp.com/search?api_key=C900A666A97042E0BA3DB407B95D254F&q=electronics+recycling&location='+ city+'&gl=us&cr=us&lr=lang_en&num=3'
+                let url2 = 'https://api.valueserp.com/search?api_key=A194679C5A1340D5986D72FAE3E67B62&q=electronics+recycling&location='+ city+'&gl=us&cr=us&lr=lang_en&num=3'
     
                 $.ajax({
                 url: url2,
@@ -494,7 +494,7 @@ var hazardSearch = () =>{
     
                 let result1 = '';
                 // Commented out URL
-                let url2 = 'https://api.valueserp.com/search?api_key=C900A666A97042E0BA3DB407B95D254F&q=hazardous+recycling&location='+ city+'&gl=us&cr=us&lr=lang_en&num=3'
+                let url2 = 'https://api.valueserp.com/search?api_key=A194679C5A1340D5986D72FAE3E67B62&q=hazardous+recycling&location='+ city+'&gl=us&cr=us&lr=lang_en&num=3'
                 $.ajax({
                 url: url2,
                 type: 'GET',
